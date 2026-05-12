@@ -1,0 +1,76 @@
+.textContent {
+  width: 100%;
+  height: 120px; /* Text box height */
+  overflow: hidden;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  box-shadow: 0 0 25px rgba(0, 255, 200, 0.4);
+}
+
+/* SCROLLING EFFECT */
+.textContent h1 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #00f5d4;
+
+  animation: scrollUp 12s linear infinite;
+  padding: 0 20px;
+}
+
+/* KEYFRAMES */
+@keyframes scrollUp {
+  0% {
+    transform: translateY(120%);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-120%);
+    opacity: 0;
+  }
+}
+
+/* EXTRA 2026 TOUCH */
+.textContent::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(0, 255, 200, 0.12),
+    transparent
+  );
+  animation: shine 4s infinite linear;
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-30%);
+  }
+  100% {
+    transform: translateX(30%);
+  }
+}

@@ -1,0 +1,141 @@
+/* Navbar base */
+.navbar {
+  width: 100%;
+  background-color: #1e293b;
+  color: #fff;
+  padding: 15px 25px;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.08);
+}
+
+/* Center Links */
+.nav-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.nav-links.mobile {
+  flex-direction: column;
+  gap: 15px;
+}
+
+.nav-item {
+  position: relative;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+/* Hover underline animation */
+.nav-item span::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: yellow;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  transition: 0.3s;
+}
+
+.nav-item:hover span::after {
+  width: 100%;
+}
+
+/* Active link */
+.active-link {
+  font-weight: bold;
+  color: yellow;
+}
+
+/* Right buttons */
+.nav-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-actions.mobile {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login-btn,
+.signup-btn {
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+}
+
+.login-btn:hover {
+  background: white;
+  color: black;
+}
+
+.signup-btn {
+  background: yellow;
+  color: black;
+  font-weight: bold;
+  border: none;
+}
+
+.signup-btn:hover {
+  background: rgb(247, 224, 28);
+}
+
+/* Hamburger (mobile only) */
+.hamburger {
+  font-size: 28px;
+  display: none;
+  cursor: pointer;
+}
+
+/* Mobile dropdown */
+.mobile-menu {
+  display: none;
+  animation: slideDown 0.3s ease-in-out;
+  padding-bottom: 15px;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}

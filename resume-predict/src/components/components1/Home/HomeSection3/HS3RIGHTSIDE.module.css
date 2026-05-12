@@ -1,0 +1,73 @@
+.guideSection {
+  margin-top: 60px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 30px rgba(0, 255, 200, 0.15);
+}
+
+/* LEFT VIDEO BOX */
+.videoBox video {
+  display: block;
+  width: 50%;
+  height: 50%;
+  max-width: 650px;
+  border-radius: 15px;
+  border: 2px solid rgba(0, 255, 200, 0.4);
+  box-shadow: 0 0 25px rgba(0, 255, 200, 0.25);
+}
+
+/* RIGHT SIDE TEXT */
+.guideText h2 {
+  font-size: 2rem;
+  color: #00f5d4;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(0, 255, 200, 0.3);
+}
+
+.guideText ul {
+  list-style: none;
+  padding: 0;
+}
+
+.guideText ul li {
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+  color: #eafffa;
+  line-height: 1.6;
+  position: relative;
+  padding-left: 22px;
+}
+
+.guideText ul li::before {
+  content: "✔";
+  color: #00f5d4;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 850px) {
+  .guideSection {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .guideText ul li {
+    padding-left: 0;
+  }
+
+  .guideText ul li::before {
+    display: none;
+  }
+}

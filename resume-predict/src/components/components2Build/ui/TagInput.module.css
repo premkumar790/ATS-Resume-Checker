@@ -1,0 +1,64 @@
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  background: #1a2436;
+  border: 1px solid #1e2d45;
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  min-height: 44px;
+  cursor: text;
+  transition: border-color 0.2s;
+}
+
+.wrap:focus-within {
+  border-color: #3b82f6;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: #1e3a5f;
+  color: #93c5fd;
+  border: 1px solid #2563eb44;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  padding: 0.2rem 0.65rem;
+  white-space: nowrap;
+}
+
+.remove {
+  background: transparent;
+  border: none;
+  color: #64748b;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 0;
+  transition: color 0.15s;
+  display: flex;
+  align-items: center;
+}
+
+.remove:hover {
+  color: #ef4444;
+}
+
+.input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #e2e8f0;
+  font-size: 0.9rem;
+  font-family: inherit;
+  min-width: 140px;
+  flex: 1;
+  padding: 0.1rem 0;
+}
+
+.input::placeholder {
+  color: #64748b;
+}

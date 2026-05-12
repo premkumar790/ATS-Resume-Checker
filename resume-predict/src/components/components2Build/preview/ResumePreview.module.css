@@ -1,0 +1,193 @@
+/* Resume Paper — white document style */
+.paper {
+  background: #ffffff;
+  color: #1a1a2e;
+  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  padding: 2rem 2.2rem;
+  border-radius: 4px;
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.18);
+  min-height: 29.7cm;
+  max-width: 21cm;
+  margin: 0 auto;
+}
+
+/* ── HEADER ── */
+.header {
+  margin-bottom: 0.6rem;
+}
+
+.name {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.role {
+  font-size: 0.92rem;
+  color: #2563eb;
+  font-weight: 500;
+  margin-top: 0.2rem;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1rem;
+  margin-top: 0.5rem;
+  font-size: 0.72rem;
+  color: #64748b;
+}
+
+/* ── DIVIDER ── */
+.divider {
+  height: 2px;
+  background: linear-gradient(90deg, #0f172a 0%, #e2e8f0 100%);
+  margin: 0.7rem 0;
+}
+
+/* ── SECTIONS ── */
+.section {
+  margin-bottom: 0.9rem;
+}
+
+.sectionTitle {
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #0f172a;
+  border-bottom: 1.5px solid #e2e8f0;
+  padding-bottom: 0.25rem;
+  margin-bottom: 0.55rem;
+}
+
+/* ── SUMMARY ── */
+.summary {
+  font-size: 0.78rem;
+  color: #374151;
+  line-height: 1.6;
+}
+
+/* ── SKILLS ── */
+.skillGroup {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin-bottom: 0.35rem;
+}
+
+.skillGroupLabel {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+  padding-top: 0.15rem;
+  min-width: 56px;
+}
+
+.skillTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.skillTag {
+  background: #f1f5f9;
+  color: #334155;
+  border-radius: 4px;
+  padding: 0.12rem 0.5rem;
+  font-size: 0.68rem;
+  font-weight: 500;
+}
+
+.softTag {
+  background: #f0fdf4;
+  color: #166534;
+}
+
+/* ── ITEMS (edu, exp, proj) ── */
+.item {
+  margin-bottom: 0.7rem;
+}
+
+.itemHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.itemTitle {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.itemSub {
+  font-size: 0.74rem;
+  color: #2563eb;
+  margin-top: 0.05rem;
+}
+
+.itemRight {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.itemDate {
+  font-size: 0.7rem;
+  color: #64748b;
+  white-space: nowrap;
+}
+
+/* ── BULLET POINTS ── */
+.points {
+  margin-top: 0.3rem;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.points li {
+  font-size: 0.74rem;
+  color: #374151;
+  line-height: 1.5;
+}
+
+/* ── PROJECT LINK ── */
+.projLink {
+  color: #2563eb;
+  text-decoration: none;
+  font-size: 0.75rem;
+}
+
+/* ── CERTIFICATIONS ── */
+.certItem {
+  font-size: 0.75rem;
+  color: #374151;
+  margin-bottom: 0.3rem;
+  line-height: 1.4;
+}
+
+/* ── LANGUAGES ── */
+.langText {
+  font-size: 0.76rem;
+  color: #374151;
+}
+
+/* ── PRINT STYLES ── */
+@media print {
+  .paper {
+    box-shadow: none;
+    padding: 1.5cm 2cm;
+    min-height: auto;
+    border-radius: 0;
+  }
+}

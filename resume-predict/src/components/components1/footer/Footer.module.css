@@ -1,0 +1,178 @@
+.footer {
+  background: #0a0f1a;
+  border-top: 1px solid #1e2d45;
+  padding: 3rem 0 0;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 2.5rem;
+}
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── COL 1 — Brand ── */
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.logo {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #00e5a0;
+  letter-spacing: -0.02em;
+}
+
+.desc {
+  font-size: 0.82rem;
+  color: #64748b;
+  line-height: 1.7;
+  max-width: 280px;
+}
+
+/* Social icons */
+.socials {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 0.3rem;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  background: #111827;
+  border: 1px solid #1e2d45;
+  border-radius: 8px;
+  color: #64748b;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.socialLink:hover {
+  background: #1e2d45;
+  border-color: #00e5a0;
+  color: #00e5a0;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* ── COLUMNS ── */
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.colTitle {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.2rem;
+}
+
+/* Links */
+.linkList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.link {
+  font-size: 0.82rem;
+  color: #64748b;
+  text-decoration: none;
+  transition: color 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.link:hover {
+  color: #00e5a0;
+}
+
+/* Features */
+.featureItem {
+  font-size: 0.82rem;
+  color: #64748b;
+}
+
+/* Tech tags */
+.techTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.techTag {
+  background: #111827;
+  border: 1px solid #1e2d45;
+  color: #64748b;
+  border-radius: 6px;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.72rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.techTag:hover {
+  border-color: #00e5a0;
+  color: #00e5a0;
+}
+
+/* ── BOTTOM BAR ── */
+.bottomBar {
+  max-width: 1200px;
+  margin: 2.5rem auto 0;
+  padding: 1.2rem 2rem;
+  border-top: 1px solid #1e2d45;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.copyright {
+  font-size: 0.78rem;
+  color: #475569;
+}
+
+.madeWith {
+  font-size: 0.78rem;
+  color: #475569;
+}
+
+.accent {
+  color: #00e5a0;
+  font-weight: 600;
+}
