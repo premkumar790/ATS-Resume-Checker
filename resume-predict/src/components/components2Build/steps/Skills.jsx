@@ -1,7 +1,7 @@
 import { useState } from "react";
 import TagInput from "../ui/TagInput";
 import styles from "./Skills.module.css";
-import { suggestAPI } from "../../../services/resumeApi";
+import { suggestAPI } from "../../../services/resumeAPI";
 
 const Skills = ({ form, set, validation }) => {
   const [loadingRoleSuggest, setLoadingRoleSuggest] = useState(false);
