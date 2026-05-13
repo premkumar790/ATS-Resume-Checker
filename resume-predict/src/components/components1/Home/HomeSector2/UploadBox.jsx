@@ -156,7 +156,7 @@ const UploadBox = () => {
 
       console.log("📤 Sending file to backend...");
 
-      const res = await fetch("http://localhost:5000/api/analyze", {
+      const res = await fetch("https://ats-resume-checker-rslh.onrender.com/api/analyze", {
         method: "POST",
         body: formData,
       });

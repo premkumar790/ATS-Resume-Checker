@@ -32,4 +32,4 @@ export const EXPERIENCE_TEMPLATE   = { title: "", company: "", duration: "", des
 export const PROJECT_TEMPLATE      = { name: "", tech_stack: "", description: "" };
 export const CERTIFICATION_TEMPLATE = { name: "", issuer: "", year: "" };
 
-export const API_BASE = "http://localhost:5000/api/resume";
+export const API_BASE = "https://ats-resume-checker-rslh.onrender.com/api/resume";
